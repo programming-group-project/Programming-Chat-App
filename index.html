@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<title>Hey BB Wanna Chat?</title>
+	</head>
+	
+	<script type="text/JavaScript">
+        function showMessage(){
+            var message = document.getElementById("message").value;
+            display_message.innerHTML= message;
+        }
+    </script>
+	
+	<div class = "body">
+		<form>
+		<input id = "message" type = "text" accept = "file_extension|audio/*|video/*|image/*|media_type" placeholder = "Enter something to say here..." class = "user_text">
+		<input class = "submit" type = "submit" value = "submit" onclick = "showMessage()">
+		</form>
+		<form method = "post" action = "">
+		<div id = "display_message" class = "text_area">
+		</div>
+		</form>
+	</div>
+</html>
