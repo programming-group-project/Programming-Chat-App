@@ -10,9 +10,12 @@
             var message = document.getElementById("message").value;
             display_message.innerHTML= message;
         }
-    </script>
+	</script>
+	
 	
 	<div class = "body">
+			The current date is
+			<% import datetime print datetime.date.today().strftime("%d:%m:%y")%>
 		<form>
 		<input id = "message" type = "text" accept = "file_extension|audio/*|video/*|image/*|media_type" placeholder = "Enter something to say here..." class = "user_text">
 		<input class = "submit" type = "submit" value = "submit" onclick = "showMessage()">
